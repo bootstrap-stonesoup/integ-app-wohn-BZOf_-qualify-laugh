@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-kbnv
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/bootstrap/integration2-wqud-tenant/integ-app-wohn/hacbs-test-project-kbnv@sha256:53a49ae60e0cbaab4e4e72bdbe4c715f69abc0bb20a16c2a5e2fc2980b93b413
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
